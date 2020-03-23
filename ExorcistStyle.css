@@ -7,7 +7,9 @@
 	color:grey;
 	margin:auto;}
 body {
-	background-image:url("road5.jpg");
+	background-image:url("road4.jpg");
+	background-repeat:no-repeat;
+	background-position: center;
 	}
 .info {
 	border:15px ridge rgb(97, 0, 0);
