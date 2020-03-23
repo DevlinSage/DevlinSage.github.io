@@ -22,9 +22,9 @@
 		border-radius:25px;
 		background-color:grey;
 		padding:5px 5px 5px 5px;
-		float:left;
+		float:top;
 		margin:auto;
 		margin-top:25px;
-		width:45%;	
+		width:auto;	
 	}
 </style>
