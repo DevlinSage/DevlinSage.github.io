@@ -1,0 +1,36 @@
+#heading {
+    width: 30%;
+    font-family: monospace;
+    font-size: 50px;
+    background-color: rgb(0, 92, 212);
+    margin:auto; 
+    padding: 5px 5px 5px 5px;
+    border: 4px ridge rgb(0, 0, 0);
+    border-radius: 20px;
+}
+body {
+    padding: 1% 1% 1% 1%;
+    margin:auto;
+    background-image:url("circuit1.jpg");
+    background-position: center;
+}
+#motherboard {
+    margin-top: 1%;
+    border: 4px ridge rgb(0, 0, 0);
+    border-radius: 20px;
+    width: 55%;
+}
+.info {
+    text-indent: 7.5%;
+    float:right;
+    width: 42%;
+    font-size: 25px;
+    background-color: rgb(0, 92, 212);
+    margin-top: 1%;
+    padding: 5px 5px 5px 5px;
+    border: 4px ridge rgb(0, 0, 0);
+    border-radius: 20px;
+}
+#intro {
+    text-align: center;
+}
