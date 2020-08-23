@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Command List</title>
+<link rel="icon" type="image/ico" href="discordbot.png" />
+<link rel="stylesheet" type="text/css" href="discordbotcommandlist.css">
+</head>
+<body>
+	<div id="commandlistdiv">
+        <h1 id="commandlisth">
+            <li>$botListDescription[description]</li>
+            <li>$botListHide<br></li>
+            <li>$suppressErrors<br></li>
+            <li>$suppressErrors[error message]<br></li>
+            <li>$authorAvatar<br></li>
+            <li>$embedSuppressErrors[title; error message; color; author; footer text; footer icon]<br></li>
+            <li>$channelID<br></li>
+            <li>$channelID[Channel's name]<br></li>
+            <li>$botTyping<br></li>
+            <li>$allowMention<br></li>
+            <li>$authorID<br></li>
+            <li>$guildID<br></li>
+            <li>$guildID[name]<br></li>
+            <li>$message<br></li>
+            <li>$message[arg number]<br></li>
+            <li>$noMentionMessage<br></li>
+            <li>$noMentionMessage[arg number]<br></li>
+            <li>$mentionedChannels[mention number;yes/no]<br></li>
+            <li>$mentionedRoles[mention number]<br></li>
+            <li>$mentioned[mention number;yes/no]<br></li>
+            <li>$replyIn[time]<br></li>
+            <li>$randomText[some;text;...]<br></li>
+            <li>$userID[username#discriminator or username]<br></li>
+            <li>$varExistError[variable name;error message]<br></li>
+            <li>$resetUserVar[variable name]<br></li>
+            <li>$resetServerVar[variable name]<br></li>
+            <li>$getServerVar[Variable name]<br></li>
+            <li>$getUserVar[Variable name] or $getUserVar[Variable name;User's ID]<br></li>
+            <li>$getVar[Variable name] or $getVar[Variable name;userID]<br></li>
+            <li>$textSplit[someSEPARATORtext;SEPARATOR]<br></li>
+            <li>$getTextSplitLength<br></li>
+            <li>$splitText[index]<br></li>
+            <li>$joinSplitText[separator]<br></li>
+            <li>$isNumber[value]<br></li>
+            <li>$toUppercase[text]<br></li>
+            <li>$toLowercase[text]<br></li>
+            <li>$highestRoleWithPerms[perm1;perm2;etc]<br></li>
+            <li>$lowestRoleWithPerms[perm1;perm2;perm3]<br></li>
+            <li>$highestRole<br></li>
+            <li>$highestRole[userID]<br></li>
+            <li>$roleID[full role name]<br></li>
+            <li>$rolePosition[roleID]<br></li>
+            <li>$lowestRole<br></li>
+            <li>$lowestRole[userID]<br></li>
+            <li>$serverOwner<br></li>
+            <li>$serverRegion<br></li>
+            <li>$serverVerificationLvl<br></li>
+            <li>$isAdmin[userID]<br></li>
+            <li>$roleExists[roleID]<br></li>
+            <li>$userExists[userID]<br></li>
+            <li>$argCount[message]<br></li>
+            <li>$hasRole[userID;roleID]<br></li>
+            <li>$checkCondition[value1==value2] or $checkCondition[value1!=value2] or $checkCondition[value1>value2] or $checkCondition[value1<value2]<br></li>
+            <li>$isUserDMEnabled[userID]<br></li>
+            <li>$getReactions[channelID;messageID;separator;emoji]<br></li>
+            <li>$userReacted[channelID;messageID;userID;emoji]<br></li>
+            <li>$replaceText[text;sample;new;how many]<br></li>
+            <li>$getInviteInfo[code;uses/channel/creationDate/inviter/isTemporary]<br></li>
+            <li>$enabled[yes/no;error message]<br></li>
+            <li>$argsCheck[how many args; error message]<br></li>
+            <li>$onlyBotPerms[perm1;perm2;error message]<br></li>
+            <li>$onlyBotChannelPerms[channelID;perm1;perm2;error message]<br></li>
+            <li>$onlyAdmin[error message]<br></li>
+            <li>$onlyForServers[serverID1;serverID2;etc;error message]<br></li>
+            <li>$onlyForIDs[id1;id2;...;messageWhenNoPermissions]<br></li>
+            <li>$onlyForChannels[channelID1;channelID2;..;messageWhenInvalidChannel]<br></li>
+            <li>$onlyForUsers[user1;user2;...;messageWhenNoPermissions]<br></li>
+            <li>$onlyForRoles[roleName1;roleName2;messageWhenNoPermissions]<br></li>
+            <li>$onlyNSFW[error message]<br></li>
+            <li>$onlyPerms[perm1;perm2;error message]<br></li>
+            <li>$date<br></li>
+            <li>$isBot[userID]<br></li>
+            <li>$isValidHex[hex]<br></li>
+            <li>$checkContains[text;word1;word2;etc]<br></li>
+            <li>$onlyIfMessageContains[message;word1;word2;etc;errorMessage]<br></li>
+            <li>$onlyIf[value1==value2;error] or $onlyIf[value1!=value2;error] or $onlyIf[value1>value2;error] or $onlyIf[value1<value2;error]<br></li>
+            <li>$ignoreChannels[channel id;...;messageWhenIgnoredChannel]<br></li>
+            <li>$blackListServers[serverID1;serverID2;etc;error message]<br></li>
+            <li>$blackListIDs[userID1;userID2;etc;Message when user's ID is in the blacklist]<br></li>
+            <li>$blackListRolesIDs[roleID1;roleID2;etc;Message when role is in the blacklist]<br></li>
+            <li>$blackListRoles[roleName1;roleName2;etc;Message when role is in the blacklist]<br></li>
+            <li>$blackListUsers[username1;username2;etc;Message when user's name is in the blacklist]<br></li>
+            <li>$changeCooldownTime[time-days;time-hours;time-minutes;time-seconds]<br></li>
+            <li>$globalCooldown[duration;error message]<br></li>
+            <li>$cooldown[duration;error message]<br></li>
+            <li>$deleteIn[time]<br></li>
+            <li>$editIn[time;new message]<br></li>
+            <li>$tts<br></li>
+            <li>$getBotInvite<br></li>
+            <li>$getServerInvite<br></li>
+            <li>$getServerInvite[guildID]<br></li>
+            <li>$nomention<br></li>
+            <li>$userRoles[User ID]<br></li>
+            <li>$pinMessage<br></li>
+            <li>$ignoreLinks<br></li>
+            <li>$addEmoji[name;url;(yes or no)return emoji]<br></li>
+            <li>$customEmoji[emoji's name]<br></li>
+            <li>$emoteCount<br></li>
+            <li>$uptime<br></li>
+            <li>$time[timezone]<br></li>
+            <li>$hour<br></li>
+            <li>$minute<br></li>
+            <li>$second<br></li>
+            <li>$day<br></li>
+            <li>$month<br></li>
+            <li>$year<br></li>
+            <li>$serverIcon<br></li>
+            <li>$serverIcon[serverID]<br></li>
+            <li>$randomUserID<br></li>
+            <li>$randomUser<br></li>
+            <li>$randomMention<br></li>
+            <li>$authorOfMessage[channelID;messageID]<br></li>
+            <li>$userAvatar[userID]<br></li>
+            <li>$roleNames<br></li>
+            <li>$roleName[roleID]<br></li>
+            <li>$serverNames<br></li>
+            <li>$serverName[guildID]<br></li>
+            <li>$username<br></li>
+            <li>$username[userID]<br></li>
+            <li>$ping<br></li>
+            <li>$charCount[text]<br></li>
+            <li>$serverCount<br></li>
+            <li>$variablesCount[type (user/server)]<br></li>
+            <li>$channelName[channelID]<br></li>
+            <li>$roleID[full role name]<br></li>
+            <li>$isMentionable[roleID]<br></li>
+            <li>$isHoisted[roleID]<br></li>
+            <li>$getMessage[channel ID;message ID;(optional) content/authorID/username/avatar]<br></li>
+            <li>$getRoleColor[role ID]<br></li>
+            <li>$discriminator[userID]<br></li>
+            <li>$creationDate[userID/roleID/messageID/serverID]<br></li>
+            <li>$banID<br></li>
+            <li>$banID[reason] or $banID[reason;id]<br></li>
+            <li>$ban<br></li>
+            <li>$ban[reason]<br></li>
+            <li>$unbanID<br></li>
+            <li>$unbanID[id]<br></li>
+            <li>$unban<br></li>
+            <li>$kickMention<br></li>
+            <li>$kickMention[reason]<br></li>
+            <li>$kick<br></li>
+            <li>$kick[userID;(optional) reason]<br></li>
+            <li>$mute[Muted]<br></li>
+            <li>$unmute[Muted]<br></li>
+            <li>$commandsCount<br></li>
+            <li>$allMembersCount<br></li>
+            <li>$membersCount<br></li>
+            <li>$membersCount[presence]<br></li>
+            <li>$roleCount<br></li>
+            <li>$channelCount<br></li>
+            <li>$colorRole[color int or hex]<br></li>
+            <li>$giveRole[RoleID] or $giveRole[user id;role ID]<br></li>
+            <li>$takeRole[Role ID] or $takeRole[user id;role ID]<br></li>
+            <li>$newTicket[categoryID/name;Message when no question;Message in ticket;Message to user;Error Message]<br></li>
+            <li>$closeTicket[error message]<br></li>
+            <li>$clearReactions[channelID;messageID;emoji/!all]<br></li>
+            <li>$clear<br></li>
+            <li>$clear[how many;userID;remove pinned messages(yes or no. Default option is set to 'yes')]<br></li>
+            <li>$removeContains[word1;word2;etc;how many]<br></li>
+            <li>$randomString[string length]<br></li>
+            <li>$random<br></li>
+            <li>$random[min;max]<br></li>
+            <li>$sum[a;b;c;...]<br></li>
+            <li>$sub[a;b;c;...]<br></li>
+            <li>$multi[a;b;c;...]<br></li>
+            <li>$divide[a;b;c;...]<br></li>
+            <li>$modulo[a;b]<br></li>
+            <li>$numberSeparator[number; (optional) separator]<br></li>
+            <li>$createRole[role name;color;display role(yes or no);mentionable (yes or no)]<br></li>
+            <li>$modifyRolePerms[roleID;perm1;perm2;perm3;etc]<br></li>
+            <li>$modifyRole[role's ID;role name;color;display role(yes or no);mentionable (yes or no)]<br></li>
+            <li>$repeatMessage[how many times;message]<br></li>
+            <li>$image[image URL]<br></li>
+            <li>$deleteChannelsByName[name1;name2;name3]<br></li>
+            <li>$deleteChannels[id1;id2;id3]<br></li>
+            <li>$createChannel[name;type] or $createChannel[name;type;category ID]<br></li>
+            <li>$modifyChannelPerms[channel's ID;+perm1;+perm2;-perm3;+perm4;(optional)userID/roleID]<br></li>
+            <li>$modifyChannel[channel's ID; channel's name; description; NSFW (yes or no); channel's position] or $modifyChannel[channel's ID; channel's name; description; NSFW (yes or no); channel's position; category ID]<br></li>
+            <li>$changeUsernameWithID[userID;new username]<br></li>
+            <li>$changeUsername[new username]<br></li>
+            <li>$userLeaderboard[variable name;asc/desc]<br></li>
+            <li>$serverLeaderboard[variable name;asc/desc]<br></li>
+            <li>$globalUserLeaderboard[variable name;asc/desc]<br></li>
+            <li>$title[title]<br></li>
+            <li>$embeddedURL[url]<br></li>
+            <li>$footerIcon[icon URL]<br></li>
+            <li>$footer[text]<br></li>
+            <li>$color[Color int or hex]<br></li>
+            <li>$addTimestamp<br></li>
+            <li>$thumbnail[image URL]<br></li>
+            <li>$authorIcon[image URL]<br></li>
+            <li>$authorURL[URL]<br></li>
+            <li>$author[text]<br></li>
+            <li>$useChannel[channelID]<br></li>
+            <li>$dm<br></li>
+            <li>$dm[userID]<br></li>
+            <li>$addCmdReactions[😁emoji;emoji2;emoji3;etc...😂]<br></li>
+            <li>$addReactions[😁;😂]<br></li>
+            <li>$channelSendMessage[channelID;message]<br></li>
+            <li>$addField[name;value] or [name;value;yes/no]<br></li>
+            <li>$roleInfo[]<br></li>
+            <li>$userInfo[]<br></li>
+            <li>$serverInfo[message] or $serverInfo[message; show thumbnail (yes or no)]<br></li>
+            <li>$description[message]<br></li>
+            <li>$deletecommand<br></li>
+            <li>$setServerVar[Variable name;New variable value]<br></li>
+            <li>$setUserVar[Variable name;New variable value] or $setUserVar[Variable name;New variable value;User's ID]<br></li>
+            <li>$setVar[Variable name;New variable value] or $setVar[Variable name;New variable value;userID]<br></li>
+            <li>$executionTime<br></li>
+            <li>$botLeave<br></li>
+        </h1>
+    </div>
+</body>
